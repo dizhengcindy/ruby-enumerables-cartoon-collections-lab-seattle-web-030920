@@ -22,7 +22,8 @@ def find_the_cheese(aos)
   cheese_types = ["cheddar", "gouda", "camembert"]
   
   result = aos.find{|element|
-    element.include? (cheese_types[0])||element.include? (cheese_types[1])||element.include? (cheese_types[2])
+    element.include?(cheese_types[0]) || element.include?(cheese_types[1]) || 
+    element.include?(cheese_types[2])
   }
   result
   
